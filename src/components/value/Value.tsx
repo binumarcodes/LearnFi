@@ -75,7 +75,7 @@ function Value() {
         <div>
           <h3 className="value-for">For Tutors</h3>
           <p className="value-text">
-            Teach, mentor, and earn Xion tokens. Offer one-on-one mentorship, gain recognition with NFT certificates, and enhance your teaching with AI-powered tools.
+            Teach, mentor, and earn Xion tokens. Offer one-on-one mentorship, receive gifts from your streams, gain recognition with NFT certificates, and enhance your teaching with AI-powered tools.
           </p>
         </div>
       </div>
