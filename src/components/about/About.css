@@ -11,8 +11,8 @@
 
 /* Title */
 .about-title {
-    font-size: 3vw; /* Scales based on viewport width */
-    color: #ffcc00;
+    font-size: 40px; /* Scales based on viewport width */
+    color: #003333;
     font-family: "Winky Sans", sans-serif;
     margin: 50px 20px 70px;
 }
@@ -30,8 +30,8 @@
 
 /* Headings */
 .about-header {
-    font-size: 2.5vw;
-    color: #00ff00;
+    font-size: 30px;
+    color: #ffcc00;
     font-family: "Winky Sans", sans-serif;
     max-width: 600px;
 }
