@@ -1,0 +1,38 @@
+.screenshort-container {
+    background-image: url('../../assets/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    height: 100vh;
+    position: relative;
+}
+
+/* Default phone styling */
+.screenshort-phone {
+    width: 250px;
+    height: auto;
+    position: absolute;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Left phone with higher z-index */
+.left-phone {
+    transform: rotate(-25deg) translateX(-100px);
+    z-index: 2;
+}
+
+/* Right phone */
+.right-phone {
+    transform: rotate(25deg) translateX(100px);
+    z-index: 1;
+}
+
+/* Hover effect: Rotate phones back to normal */
+.screenshort-phone:hover {
+    transform: rotate(0deg) translateX(0px);
+    z-index: 3;
+}

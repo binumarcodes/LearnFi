@@ -5,6 +5,7 @@ import Hero from './components/hero/Hero';
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Value from './components/value/Value';
 import Footer from './components/footer/Footer';
+import Screenshort from './components/screenshort/Screenshort';
 
 
 const theme = createTheme({
@@ -21,6 +22,7 @@ function App() {
       <Hero />
       <About />
       <Value />
+      <Screenshort />
       <Footer />
     </div>
     </ThemeProvider>
