@@ -57,7 +57,7 @@ function About() {
         <div>
           <h1 className="about-header">Social Learning</h1>
           <p className="about-text">
-            Social media experience, connect with peers and tutors, collaborate on lessons, and make learning fun with community-driven discussions.
+            Social media user experience, connect with peers and tutors, collaborate on lessons, and make learning fun with community-driven discussions.
           </p>
         </div>
       </div>
