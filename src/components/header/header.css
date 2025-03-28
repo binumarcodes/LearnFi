@@ -1,0 +1,25 @@
+.header {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    padding: 15px 60px;
+    color: "#003333";
+    width: 100vw;
+    border-bottom-width: 1;
+    border-bottom-color: #b4b4b4;
+    border-bottom-style: solid;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .logo {
+    width: 200px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 15px;
+  }
+  
+  .header-title {
+    font-size: 1.5rem;
+  }
+  

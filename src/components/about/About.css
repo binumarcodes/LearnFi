@@ -1,0 +1,98 @@
+/* .about-wrapper { */
+    /* background-image: url('../../assets/background.png'); Replace 'your-image.jpg' with the actual image path */
+    /* background-size: cover; Ensures the image covers the entire container */
+    /* background-position: center; Centers the image */
+    /* background-repeat: no-repeat; Prevents the image from repeating */
+/* } */
+.about-wrapper {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Title */
+.about-title {
+    font-size: 3vw; /* Scales based on viewport width */
+    color: #003333;
+    font-family: "Winky Sans", sans-serif;
+    margin: 50px 20px 70px;
+}
+
+/* Container */
+.aboutContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 100px;
+    flex-wrap: wrap; /* Allows responsiveness */
+    text-align: center;
+}
+
+/* Headings */
+.about-header {
+    font-size: 2.5vw;
+    color: #00ff00;
+    font-family: "Winky Sans", sans-serif;
+    max-width: 600px;
+}
+
+/* Text */
+.about-text {
+    font-size: 1.5vw;
+    color: #4B4B4B;
+    font-family: "Quicksand", sans-serif;
+    max-width: 600px;
+    margin: 10px auto;
+}
+
+/* Images */
+.about-logo {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .aboutContainer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-title {
+        font-size: 24px;
+    }
+
+    .about-header {
+        font-size: 22px;
+    }
+
+    .about-text {
+        font-size: 18px;
+        width: 90%;
+    }
+
+    .about-logo {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-title {
+        font-size: 20px;
+    }
+
+    .about-header {
+        font-size: 18px;
+    }
+
+    .about-text {
+        font-size: 16px;
+        margin: 0
+    }
+
+    .about-logo {
+        max-width: 180px;
+        margin: 0;
+    }
+}
