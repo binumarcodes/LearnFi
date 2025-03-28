@@ -15,8 +15,8 @@ function About() {
     if (!aboutRef.current) return; // Prevent running GSAP on null
 
     let ctx = gsap.context(() => {
-      const sections = gsap.utils.toArray(".aboutContainer");
-
+      const sections = gsap.utils.toArray<HTMLElement>(".aboutContainer"); // Explicitly define type
+    
       sections.forEach((section) => {
         gsap.from(section, {
           opacity: 0,
@@ -30,6 +30,7 @@ function About() {
           },
         });
       });
+    
 
       gsap.from(".about-logo", {
         opacity: 0,

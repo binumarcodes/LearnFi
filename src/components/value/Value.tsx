@@ -13,43 +13,48 @@ function Value() {
 
   useLayoutEffect(() => {
     if (!valueRef.current) return;
-
+  
     let ctx = gsap.context(() => {
-      const sections = gsap.utils.toArray(".valueContainer");
-
+      const sections = gsap.utils.toArray<HTMLElement>(".valueContainer"); // Fix: Explicitly set the type
+  
       sections.forEach((section, index) => {
-        const text = section.querySelector(".value-text");
-        const img = section.querySelector(".value-logo");
-
-        gsap.from(text, {
-          opacity: 0,
-          x: index % 2 === 0 ? -50 : 50, // Alternate slide directions
-          duration: 1.2,
-          ease: "power3.out",
-          scrollTrigger: {
-            trigger: section,
-            start: "top 80%",
-            toggleActions: "play none none none",
-          },
-        });
-
-        gsap.from(img, {
-          opacity: 0,
-          scale: 0.8,
-          rotate: index % 2 === 0 ? -5 : 5, // Slight rotation effect
-          duration: 1.5,
-          ease: "elastic.out(1, 0.5)",
-          scrollTrigger: {
-            trigger: section,
-            start: "top 85%",
-            toggleActions: "play none none none",
-          },
-        });
+        const text = section.querySelector(".value-text") as HTMLElement | null;
+        const img = section.querySelector(".value-logo") as HTMLElement | null;
+  
+        if (text) {
+          gsap.from(text, {
+            opacity: 0,
+            x: index % 2 === 0 ? -50 : 50,
+            duration: 1.2,
+            ease: "power3.out",
+            scrollTrigger: {
+              trigger: section,
+              start: "top 80%",
+              toggleActions: "play none none none",
+            },
+          });
+        }
+  
+        if (img) {
+          gsap.from(img, {
+            opacity: 0,
+            scale: 0.8,
+            rotate: index % 2 === 0 ? -5 : 5,
+            duration: 1.5,
+            ease: "elastic.out(1, 0.5)",
+            scrollTrigger: {
+              trigger: section,
+              start: "top 85%",
+              toggleActions: "play none none none",
+            },
+          });
+        }
       });
     }, valueRef);
-
-    return () => ctx.revert(); // Cleanup animations on unmount
+  
+    return () => ctx.revert();
   }, []);
+  
 
   return (
     <div ref={valueRef} className="value-wrapper">
