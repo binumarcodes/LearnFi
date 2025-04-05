@@ -16,13 +16,13 @@ function Footer() {
           <div className="social-icons">
             <h3>Follow Us</h3>
             <div className="social-links">
-              <a href="https://twitter.com/learnfiapp" target="_blank" rel="noopener noreferrer">
+              <a href="https://x.com/learnfi_app" target="_blank" rel="noopener noreferrer">
                 <FaTwitter />
               </a>
-              <a href="https://linkedin.com/company/learnfiapp" target="_blank" rel="noopener noreferrer">
+              <a href="http://localhost:5173/LearnFi/www.linkedin.com/in/learnfi-learnfi-80575b35a" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin />
               </a>
-              <a href="https://discord.gg/learnfi" target="_blank" rel="noopener noreferrer">
+              <a href="https://discord.com/channels/1358037311321014372/1358039041219624991" target="_blank" rel="noopener noreferrer">
                 <FaDiscord />
               </a>
             </div>
