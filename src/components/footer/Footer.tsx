@@ -22,7 +22,7 @@ function Footer() {
               <a href="https://www.linkedin.com/in/learnfi-app-80575b35a/" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin />
               </a>
-              <a href="https://discord.com/channels/1358037311321014372/1358039041219624991" target="_blank" rel="noopener noreferrer">
+              <a href="https://discord.gg/fwafcwdu" target="_blank" rel="noopener noreferrer">
                 <FaDiscord />
               </a>
             </div>
