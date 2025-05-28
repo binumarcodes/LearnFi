@@ -7,13 +7,11 @@
 }
 
 .value-title {
-  font-size: 40px;
+  font-size: clamp(1.75rem, 5vw, 2.5rem); /* responsive font */
   color: #fff;
-    font-family: "Inter", sans-serif;
-    margin: 0 auto;
-  margin-bottom: 60px;
-  max-width: 500px;
-  text-align: center;
+  font-family: "Inter", sans-serif;
+  margin: 0 auto 60px;
+  max-width: 600px;
 }
 
 .cards-container {
@@ -38,27 +36,16 @@
   box-shadow: 0 10px 20px rgba(0,0,0,0.4);
 }
 
-/* Default iconWrapper background */
 .iconWrapper {
   width: 80px;
   height: 80px;
   margin: 0 auto 20px;
-  background: #f8dd00; /* default color for learner */
+  background: #f8dd00;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-/* Specific backgrounds */
-.iconWrapper.learner {
-  background: #F8DD00; /* e.g., yellow for learners */
-}
-
-.iconWrapper.tutor {
-  background: #F59E0B; /* orange for tutors */
-}
-
 
 .iconWrapper img {
   width: 60%;
@@ -68,7 +55,6 @@
 .cardWrapper h2 {
   color: #fff;
   font-size: 24px;
-  margin: 0;
   margin-top: 12px;
 }
 
@@ -76,30 +62,16 @@
   color: #A8A8A8;
   font-size: 16px;
   line-height: 1.6;
-  margin: 0;
-  margin-top: 20px;
-  margin-bottom: 32px;
+  margin: 20px 0 32px;
 }
 
-
-/* Default getStartButton background */
 .value-getStartButton {
-  background: #F8DD00; /* default learner color */
+  background: #F8DD00;
   padding: 12px 32px;
   border-radius: 100px;
   cursor: pointer;
   display: inline-block;
 }
-
-/* Specific backgrounds */
-.value-getStartButton.learner {
-  background: #F8DD00;
-}
-
-.value-getStartButton.tutor {
-  background: #F59E0B;
-}
-
 
 .value-getStartButtonText {
   font-size: 14px;
@@ -108,27 +80,68 @@
   font-weight: 500;
 }
 
-/* Responsive Styles */
+/* Specific type backgrounds */
+.iconWrapper.learner,
+.value-getStartButton.learner {
+  background: #F8DD00;
+}
+.iconWrapper.tutor,
+.value-getStartButton.tutor {
+  background: #F59E0B;
+}
+
+/* Medium Devices */
 @media (max-width: 768px) {
-  .value-title {
-    font-size: 32px;
+  .value-wrapper {
+    padding: 40px 4%;
   }
 
   .cardWrapper {
-    padding: 40px 20px;
+    padding: 40px 24px;
   }
-}
 
-@media (max-width: 480px) {
   .value-title {
-    font-size: 28px;
+    font-size: clamp(1.5rem, 6vw, 2.25rem);
   }
 
   .cardWrapper h2 {
     font-size: 20px;
   }
 
-  .cardWrapper p {
+  .cardWrapper .card-text {
+    font-size: 15px;
+  }
+}
+
+/* Small Devices */
+@media (max-width: 480px) {
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .cardWrapper {
+    padding: 32px 20px;
+  }
+
+  .value-title {
+    font-size: 1.75rem;
+  }
+
+  .cardWrapper h2 {
+    font-size: 18px;
+  }
+
+  .cardWrapper .card-text {
     font-size: 14px;
+  }
+
+  .value-getStartButton {
+    padding: 10px 24px;
+  }
+
+  .value-getStartButtonText {
+    font-size: 13px;
   }
 }

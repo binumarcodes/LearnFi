@@ -1,104 +1,106 @@
 .heroContainer {
-    min-height: 100vh;
-    background: #222;
-    padding: 20px;
-    flex-wrap: wrap;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  min-height: 100vh;
+  background: #222;
+  padding: 40px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+    max-width: 100%;
 }
 
 .text-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-/* Ensure text stays readable on smaller screens */
+
 .hero-title {
-    font-size: 52px;
-    color: #fff;
-    font-family: "Inter", sans-serif;
-    max-width: 50%;
-    margin-bottom: 16px;
-    margin-top: 70px;
-    text-align: center;
-    font-weight: 600;
+  font-size: 52px;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  margin: 70px 0 16px;
+  text-align: center;
+  font-weight: 600;
 }
 
 .hero-subtitle {
-    font-size: 18px;
-    color: #A8A8A8;
-    font-family: "Inter", sans-serif;
-    max-width: 600px;
-    margin: 0;
-    margin-bottom: 36px;
-    text-align: center;
-    font-weight: 500;
+  font-size: 20px;
+  color: #A8A8A8;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 36px;
+  text-align: center;
+  font-weight: 500;
 }
-
 
 .getStartButton {
   background: #F8DD00;
   padding: 12px 32px;
   border-radius: 100px;
   cursor: pointer;
-  display: inline-block; /* Prevent full-width */
+  display: inline-block;
 }
 
 .getStartButtonText {
   font-size: 14px;
   margin: 0;
+  font-weight: 500;
 }
 
-
-/* Ensure image scales properly */
 .hero-logo {
-    width: 900px;
-    filter: drop-shadow(0px 20px 30px rgba(0, 0, 0, 0.3));
-    animation: floating 3s ease-in-out infinite;
-    margin-top: 32px;
-
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  filter: drop-shadow(0px 20px 30px rgba(0, 0, 0, 0.3));
+  animation: floating 3s ease-in-out infinite;
+  margin-top: 40px;
 }
 
-/* Floating effect */
 @keyframes floating {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
-    100% { transform: translateY(0px); }
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
 }
 
-/* Responsive Design */
+/* Tablet */
 @media (max-width: 768px) {
-    .heroContainer {
-        flex-direction: column;
-        text-align: center;
-    }
+  .hero-title {
+    font-size: 36px;
+  }
 
-    .hero-text {
-        font-size: 18px;
-        width: 90%;
-        text-align: center;
-        margin-right: 0px;
-    }
+  .hero-subtitle {
+    font-size: 16px;
+    max-width: 90%;
+  }
 
-    .hero-logo {
-        max-width: 200px;
-        margin-top: 10px;
-        margin-left: 0px;
-    }
+  .getStartButton {
+    padding: 10px 24px;
+  }
+
+  .hero-logo {
+    max-width: 400px;
+  }
 }
 
+/* Mobile */
 @media (max-width: 480px) {
-    .hero-text {
-        font-size: 20px;
-        margin: 0;
-        margin-bottom: 50px;
-    }
+  .hero-title {
+    font-size: 28px;
+    margin-top: 40px;
+  }
 
-    .hero-logo {
-        max-width: 180px;
-        margin: 0;
-    }
+  .hero-subtitle {
+    font-size: 14px;
+  }
+
+  .getStartButton {
+    padding: 10px 20px;
+  }
+
+  .hero-logo {
+    max-width: 280px;
+  }
 }
