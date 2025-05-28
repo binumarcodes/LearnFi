@@ -1,6 +1,6 @@
 import "./Footer.css";
 import { FaTwitter, FaLinkedin, FaDiscord } from "react-icons/fa";
-import users from "../../assets/users.png";
+import Users from "../../assets/Users.png";
 import logo from '../../assets/learnfi.png'; // Ensure you have a logo.png file in your project
 
 
@@ -18,7 +18,7 @@ Join other learners already earning while they master new skills. Start your adv
         <p className='footer-getStartButtonText'>Get Started</p>
       </div>
         </div>
-                <img src={users} className="about-logo" />
+                <img src={Users} className="about-logo" />
 
       </div>
       <div className="footer-contact-container">
