@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
-import phone from "../../assets/LearnFi Phone.png";
+import phone from "../../assets/hero_image.png";
 import "./Hero.css";
 
 function Hero() {
@@ -19,10 +19,16 @@ function Hero() {
   return (
     <div className="heroContainer">
       <div className="text-container">
-        <p className="hero-text">
-          An enjoyable, engaging, and efficient way to master any course in any language!
+        <p className="hero-title">
+          An enjoyable, engaging, and efficient way to learn!
         </p>
+        <p className="hero-subtitle">Learn, Play, and Earn</p>
       </div>
+
+       <div className='getStartButton'>
+        <p className='getStartButtonText'>Get Started</p>
+      </div>
+
       <img ref={phoneRef} src={phone} className="hero-logo" alt="LearnFi Phone" />
     </div>
   );
