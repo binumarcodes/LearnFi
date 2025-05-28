@@ -23,10 +23,9 @@ function Hero() {
           An enjoyable, engaging, and efficient way to learn!
         </p>
         <p className="hero-subtitle">Learn, Play, and Earn</p>
-      </div>
-
-       <div className='getStartButton'>
-        <p className='getStartButtonText'>Get Started</p>
+        <div className='getStartButton'>
+          <p className='getStartButtonText'>Get Started</p>
+        </div>
       </div>
 
       <img ref={phoneRef} src={phone} className="hero-logo" alt="LearnFi Phone" />
