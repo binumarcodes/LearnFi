@@ -1,5 +1,5 @@
 import "./Footer.css";
-import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaTwitter, FaLinkedin, FaDiscord } from "react-icons/fa";
+import { FaTwitter, FaLinkedin, FaDiscord } from "react-icons/fa";
 import users from "../../assets/users.png";
 import logo from '../../assets/learnfi.png'; // Ensure you have a logo.png file in your project
 

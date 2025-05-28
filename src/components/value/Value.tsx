@@ -1,8 +1,6 @@
 import { useLayoutEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import learnerIcon from "../../assets/learner.png";
-import tutorIcon from "../../assets/tutor.jpg";
 import frame from "../../assets/Frame.png"
 import frame2 from "../../assets/Frame2.png"
 import "./Value.css";
