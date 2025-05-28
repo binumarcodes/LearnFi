@@ -104,6 +104,14 @@
     padding: 20px 12px;
   }
 
+  .aboutContainer {
+    flex-direction: column-reverse;
+  }
+
+  .aboutContainer.image-last {
+    flex-direction: column;
+  }
+
   .about-logo {
     max-width: 260px;
   }

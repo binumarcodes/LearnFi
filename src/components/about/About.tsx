@@ -68,7 +68,7 @@ function About() {
 
       </div>
 
-      <div className="aboutContainer">
+      <div className="aboutContainer image-last">
         <img src={about2} className="about-logo" />
         <div>
           <h1 className="about-header">Gamified Experience</h1>
