@@ -1,104 +1,149 @@
-/* Base styles - already good, just refining mobile behavior */
 .footer-container {
-  background: #2B2B2B;
-  color: #fff;
-  padding: 40px 24px; /* reduced padding for small screens */
-  text-align: center;
-  font-family: "Quicksand", sans-serif;
+    background: #2B2B2B;
+    color: #fff;
+    padding: 40px 24px;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
 }
 
 .footerContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-  text-align: center;
-}
-
-.footerContainer > div, .footerContainer img {
-  width: 100%;
-  max-width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    text-align: left;
+    flex-direction: column;
 }
 
 .footer-header {
-  font-size: 24px;
-  max-width: 100%;
+    font-size: 28px;
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    max-width: 100%;
 }
 
 .footer-text {
-  font-size: 14px;
-  max-width: 100%;
-  padding: 0 12px;
+    font-size: 16px;
+    color: #A8A8A8;
+    font-family: "Inter", sans-serif;
+    margin-top: 20px;
+    margin-bottom: 32px;
+    max-width: 100%;
 }
 
 .footer-getStartButton {
-  padding: 12px 24px;
-  margin: 0 auto; /* center on mobile */
+    background: #F8DD00;
+    padding: 12px 32px;
+    border-radius: 100px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: left;
+    max-width: fit-content;
+}
+
+.footer-getStartButtonText {
+    font-size: 14px;
+    margin: 0;
+    color: #000;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+}
+
+.about-logo {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
 }
 
 .footer-contact-container {
-  padding: 40px 24px;
-  flex-direction: column;
-  text-align: center;
+    padding: 40px 24px;
+    background-color: #3B3B3B;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
 }
 
 .footer-logo-container {
-  justify-content: center;
-  margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo {
+    width: 33px;
+    height: 24px;
 }
 
 .footerLogoText {
-  font-size: 16px;
+    color: #fff;
+    margin-left: 8px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.social-links a {
+    color: #808080;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #F8DD00;
+    transform: scale(1.2);
 }
 
 .copyright-container {
-  flex-direction: column;
-  gap: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
 }
 
 .copyright-text {
-  font-size: 14px;
-  margin-right: 0;
+    color: #A8A8A8;
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
 }
 
-.social-links {
-  justify-content: center;
-  margin-top: 16px;
-}
-
-/* Responsive layout for larger screens */
+/* Medium screens (tablets) */
 @media screen and (min-width: 768px) {
-  .footerContainer {
-    flex-direction: row;
-    align-items: center;
-    text-align: left;
-  }
+    .footerContainer {
+        flex-direction: row;
+    }
 
-  .footer-contact-container {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    text-align: left;
-  }
+    .footer-contact-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 64px 80px;
+    }
 
-  .footer-logo-container {
-    justify-content: flex-start;
-  }
+    .copyright-container {
+        flex-direction: row;
+    }
 
-  .copyright-container {
-    flex-direction: row;
-    justify-content: center;
-  }
+    .footer-header {
+        font-size: 32px;
+        max-width: 400px;
+    }
 
-  .social-links {
-    justify-content: flex-end;
-  }
+    .footer-text {
+        max-width: 400px;
+    }
+}
 
-  .footer-header {
-    font-size: 32px;
-  }
+/* Large screens (desktops) */
+@media screen and (min-width: 1024px) {
+    .footer-container {
+        padding: 40px 112px;
+    }
 
-  .footer-text {
-    font-size: 16px;
-  }
+    .footer-contact-container {
+        padding: 64px 112px;
+    }
 }
