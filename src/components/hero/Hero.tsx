@@ -17,19 +17,16 @@ function Hero() {
   }, []);
 
   return (
-    <div className="heroContainer">
-      <div className="text-container">
-        <p className="hero-title">
+    <section className="heroContainer">
+      <div className="textContainer">
+        <h1 className="heroTitle">
           An enjoyable, engaging, and efficient way to learn!
-        </p>
-        <p className="hero-subtitle">Learn, Play, and Earn</p>
-        <div className='getStartButton'>
-          <p className='getStartButtonText'>Get Started</p>
-        </div>
+        </h1>
+        <p className="heroSubtitle">Learn, Play, and Earn</p>
+        <button className="getStartButton">Get Started</button>
       </div>
-
-      <img ref={phoneRef} src={phone} className="hero-logo" alt="LearnFi Phone" />
-    </div>
+      <img ref={phoneRef} src={phone} className="heroImage" alt="LearnFi App" />
+    </section>
   );
 }
 
