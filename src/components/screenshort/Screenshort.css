@@ -1,13 +1,9 @@
 .screenshort-container {
-    background-image: url('../../assets/background.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: #2B2B2B;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 50px;
-    height: 100vh;
     position: relative;
 }
 

@@ -72,8 +72,8 @@ body {
   overflow-x: hidden;
 }
 
-@import "@fontsource/winky-sans";
-@import "@fontsource/quicksand";
+@import "@fontsource/inter";
+
 body {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Inter", sans-serif;
 }

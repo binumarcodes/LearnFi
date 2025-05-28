@@ -1,67 +1,115 @@
 .footer-container {
-    background: #003333;
+    background: #2B2B2B;
     color: #fff;
-    padding: 40px 20px;
+    padding: 40px 112px;
     text-align: center;
     font-family: "Quicksand", sans-serif;
 }
 
-.footer-content {
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.footer-row {
+.footerContainer {
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     gap: 30px;
-    justify-content: center;
+    flex-wrap: wrap; /* Allows responsiveness */
+    text-align: left;
 }
 
-.footer-section,
-.social-icons {
-    text-align: center;
-}
-
-.footer-section h3,
-.social-icons h3 {
-    font-size: 24px;
-    margin-bottom: 12px;
+/* Headings */
+.footer-header {
+    font-size: 32px;
     color: #fff;
+    font-family: "Inter", sans-serif;
+    max-width: 400px;
     font-weight: 600;
 }
 
-.footer-section p {
+/* Text */
+.footer-text {
     font-size: 16px;
-    margin: 10px 0;
+    color: #A8A8A8;
+    font-family: "Inter", sans-serif;
+    max-width: 400px;
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 32px;
+}
+
+.footer-getStartButton {
+  background: #F8DD00;
+  padding: 12px 32px;
+  border-radius: 100px;
+  cursor: pointer;
+  display: inline-block; /* keep this */
+  text-align: left; /* add this */
+  /* optional: */
+  margin-left: 0; /* ensure no unwanted margin */
+  display: block; /* Make it block so it takes full width of container */
+  max-width: fit-content; /* Shrinks to content size */
+  margin-left: 0; /* Align to left */
+}
+
+
+.footer-getStartButtonText {
+  font-size: 14px;
+  margin: 0;
+  color: #000;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+}
+
+.footer-contact-container {
+    padding: 64px 112px;
+    background-color: #3B3B3B;
+    border-radius: 12px;
     display: flex;
     align-items: center;
-    gap: 10px;
     justify-content: center;
+    flex-direction: column;
 }
 
-.footer-section p svg {
-    color: #00bfa6;
-}
+.footer-logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-logo {
+    width: 33px; /* Adjust size as needed */
+    height: 24;
+  }
 
-.social-links a {
+  .footerLogoText {
     color: #fff;
+    margin-left: 8px;
+    font-size: 18;
+    font-weight: 500;
+  }
+
+  .social-links a {
+    color: #808080;
     margin: 10px;
-    font-size: 32px;
+    font-size: 24px;
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .social-links a:hover {
-    color: #00bfa6;
+    color: #F8DD00;
     transform: scale(1.2);
 }
 
-.footer-right {
-    margin-top: 25px;
-    font-size: 14px;
-    font-weight: 300;
-    opacity: 0.8;
+.copyright-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.copyright-text {
+    color: #A8A8A8;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    margin-right: 24px;
+}
+
 
 @media screen and (min-width: 768px) {
     .footer-row {

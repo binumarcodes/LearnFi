@@ -7,14 +7,23 @@
 .about-wrapper {
     text-align: center;
     padding: 20px;
+    background: #222;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Title */
 .about-title {
     font-size: 40px; /* Scales based on viewport width */
-    color: #003333;
-    font-family: "Winky Sans", sans-serif;
-    margin: 50px 20px 70px;
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    margin-top: 23;
+    margin-bottom: 70px;
+    max-width: 400px;
+    text-align: center;
 }
 
 /* Container */
@@ -25,32 +34,65 @@
     gap: 30px;
     margin-bottom: 100px;
     flex-wrap: wrap; /* Allows responsiveness */
-    text-align: center;
+    text-align: left;
 }
 
 /* Headings */
 .about-header {
-    font-size: 30px;
-    color: #00ff00;
-    font-family: "Winky Sans", sans-serif;
+    font-size: 32px;
+    color: #fff;
+    font-family: "Inter", sans-serif;
     max-width: 600px;
+    font-weight: 600;
 }
 
 /* Text */
 .about-text {
-    font-size: 1.5vw;
-    color: #4B4B4B;
-    font-family: "Quicksand", sans-serif;
-    max-width: 600px;
-    margin: 10px auto;
+    font-size: 16px;
+    color: #A8A8A8;
+    font-family: "Inter", sans-serif;
+    max-width: 400px;
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 32px;
 }
 
 /* Images */
 .about-logo {
     width: 100%;
-    max-width: 250px;
+    max-width: 612px;
     height: auto;
 }
+
+.universe-image {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+    margin-bottom: 23px;
+}
+
+
+.about-getStartButton {
+  background: #F8DD00;
+  padding: 12px 32px;
+  border-radius: 100px;
+  cursor: pointer;
+  display: inline-block; /* keep this */
+  text-align: left; /* add this */
+  /* optional: */
+  margin-left: 0; /* ensure no unwanted margin */
+  display: block; /* Make it block so it takes full width of container */
+  max-width: fit-content; /* Shrinks to content size */
+  margin-left: 0; /* Align to left */
+}
+
+
+.about-getStartButtonText {
+  font-size: 14px;
+  margin: 0;
+  font-weight: 500;
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {

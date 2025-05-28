@@ -1,6 +1,6 @@
 /* Global Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: Inter, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f7f7f7;
@@ -16,24 +16,24 @@ body {
 }
 
 /* Hero Section */
-.hero {
+/* .hero {
   background-color: #58cc02;
   color: white;
   padding: 60px 20px;
   border-radius: 10px;
-}
+} */
 
-.hero h1 {
+/* .hero h1 {
   font-size: 36px;
   margin-bottom: 10px;
-}
+} */
 
-.hero p {
+/* .hero p {
   font-size: 18px;
   margin-bottom: 20px;
-}
+} */
 
-.cta-button {
+/* .cta-button {
   background-color: #ffd700;
   color: black;
   padding: 10px 20px;
@@ -41,21 +41,21 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-}
+} */
 
-.cta-button:hover {
+/* .cta-button:hover {
   background-color: #ffcc00;
-}
+} */
 
 /* Features Section */
-.features {
+/* .features {
   margin-top: 40px;
-}
-
+} */
+/* 
 .feature {
   background-color: white;
   padding: 20px;
   margin: 10px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+} */

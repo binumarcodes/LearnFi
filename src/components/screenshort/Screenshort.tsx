@@ -48,8 +48,8 @@ function Screenshort() {
 
   return (
     <div ref={containerRef} className="screenshort-container">
-      <img ref={leftPhoneRef} src={Home} className="screenshort-phone left-phone" />
-      <img ref={rightPhoneRef} src={Profile} className="screenshort-phone right-phone" />
+      {/* <img ref={leftPhoneRef} src={Home} className="screenshort-phone left-phone" />
+      <img ref={rightPhoneRef} src={Profile} className="screenshort-phone right-phone" /> */}
     </div>
   );
 }

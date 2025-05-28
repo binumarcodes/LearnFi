@@ -10,9 +10,10 @@ import Screenshort from './components/screenshort/Screenshort';
 
 const theme = createTheme({
   typography: {
-    fontFamily: "Quicksand, Winky Sans,  sans-serif"
+    fontFamily: "Inter, sans-serif",
   },
 });
+
 
 function App() {
   return (
