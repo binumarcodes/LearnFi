@@ -1,7 +1,7 @@
 
 .value-wrapper {
   min-height: 100vh;
-  background: #222;
+  background: #15202B;
   padding: 50px 5%;
   text-align: center;
   overflow-x: hidden;
@@ -25,7 +25,7 @@
 }
 
 .cardWrapper {
-  background: #2b2b2b;
+  background: #283F52;
   padding: 60px 40px;
   border-radius: 16px;
   width: 100%;
@@ -74,7 +74,7 @@
 }
 
 .cardWrapper .card-text {
-  color: #A8A8A8;
+  color: #A1C1D8;
   font-size: 16px;
   line-height: 1.6;
   margin: 0;
@@ -106,7 +106,7 @@
   font-size: 14px;
   margin: 0;
   color: #000;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 /* Responsive Styles */

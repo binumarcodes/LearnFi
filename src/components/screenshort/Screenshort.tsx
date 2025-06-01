@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import premium from "../../assets/premium.png"
 
 import "./Screenshort.css";
 
@@ -47,8 +48,8 @@ function Screenshort() {
 
   return (
     <div ref={containerRef} className="screenshort-container">
-      {/* <img ref={leftPhoneRef} src={Home} className="screenshort-phone left-phone" />
-      <img ref={rightPhoneRef} src={Profile} className="screenshort-phone right-phone" /> */}
+<img ref={leftPhoneRef} src={premium} className="screenshort-phone" />
+
     </div>
   );
 }
