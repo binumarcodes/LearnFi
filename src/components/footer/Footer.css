@@ -1,5 +1,5 @@
 .footer-container {
-    background: #2B2B2B;
+    background: #15202B;
     color: #fff;
     padding: 40px 24px;
     text-align: center;
@@ -26,7 +26,7 @@
 
 .footer-text {
     font-size: 16px;
-    color: #A8A8A8;
+    color: #A1C1D8;
     font-family: "Inter", sans-serif;
     margin-top: 20px;
     margin-bottom: 32px;
@@ -59,7 +59,7 @@
 
 .footer-contact-container {
     padding: 40px 24px;
-    background-color: #3B3B3B;
+    background-color: #2B4961;
     border-radius: 12px;
     display: flex;
     flex-direction: column;
@@ -85,7 +85,7 @@
 }
 
 .social-links a {
-    color: #808080;
+    color: #6FA0C1;
     margin: 0 10px;
     font-size: 24px;
     transition: transform 0.3s ease, color 0.3s ease;
@@ -104,7 +104,7 @@
 }
 
 .copyright-text {
-    color: #A8A8A8;
+    color: #A1C1D8;
     font-size: 14px;
     font-family: "Inter", sans-serif;
 }

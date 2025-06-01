@@ -1,5 +1,5 @@
 .screenshort-container {
-    background: #2B2B2B;
+    background: #15202B;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,41 +9,22 @@
 
 /* Default phone styling */
 .screenshort-phone {
-    width: 250px;
+    width: 100%;
     height: auto;
-    position: absolute;
-    transition: transform 0.5s ease-in-out;
 }
 
-/* Left phone with higher z-index */
-.left-phone {
-    transform: rotate(-25deg) translateX(-100px);
-    z-index: 2;
-}
 
-/* Right phone */
-.right-phone {
-    transform: rotate(25deg) translateX(100px);
-    z-index: 1;
-}
 
-/* Hover effect: Rotate phones back to normal */
-.screenshort-phone:hover {
-    transform: rotate(0deg) translateX(0px);
-    z-index: 3;
-}
 
 /* ✅ RESPONSIVE ADJUSTMENTS */
 @media (max-width: 768px) {
     /* Reduce phone size for tablets & small screens */
-    .screenshort-phone {
-        width: 180px;
-    }
-    .left-phone {
-        transform: rotate(-20deg) translateX(-70px);
-    }
-    .right-phone {
-        transform: rotate(20deg) translateX(70px);
+    .screenshort-container {
+        flex-direction: column;
+        max-width: 100vw;
+        overflow-x: hidden;
+            padding: 20px;
+
     }
 }
 
@@ -53,17 +34,8 @@
         flex-direction: column;
         max-width: 100vw;
         overflow-x: hidden;
+            padding: 20px;
+
     }
 
-    .screenshort-phone {
-        width: 150px;
-    }
-
-    .left-phone {
-        transform: rotate(-15deg) translateX(-50px);
-    }
-
-    .right-phone {
-        transform: rotate(15deg) translateX(50px);
-    }
 }
