@@ -48,7 +48,7 @@ function Screenshort() {
 
   return (
     <div ref={containerRef} className="screenshort-container">
-<img ref={leftPhoneRef} src={premium} className="screenshort-phone" />
+<img src={premium} className="screenshort-phone" />
 
     </div>
   );
