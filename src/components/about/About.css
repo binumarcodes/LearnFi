@@ -112,6 +112,10 @@
     flex-direction: column-reverse;
   }
 
+  .about-title {
+    max-width: 90%;
+  }
+
   .aboutContainer.image-last {
     flex-direction: column;
   }
