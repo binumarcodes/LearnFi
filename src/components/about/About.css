@@ -13,7 +13,7 @@
   font-family: "Inter", sans-serif;
   margin-top: 16px;
   margin-bottom: 60px;
-  max-width: 600px;
+  max-width: 400px;
 }
 
 /* Container */
@@ -29,9 +29,16 @@
   padding: 0 20px;
 }
 
+.about-texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  text-align: left;
+}
+
 /* Headings */
 .about-header {
-  font-size: clamp(20px, 5vw, 32px);
+  font-size: 32px;
   color: #fff;
   font-family: "Inter", sans-serif;
   font-weight: 600;
@@ -41,17 +48,18 @@
 
 /* Text */
 .about-text {
-  font-size: clamp(14px, 2.5vw, 18px);
+  font-size: 16px;
   color: #A1C1D8;
   font-family: "Inter", sans-serif;
   max-width: 480px;
   margin: 0;
   margin-bottom: 28px;
+  font-weight: 400;
 }
 
 /* Images */
 .about-logo {
-  min-width: 612px;
+  max-width: 612px;
   object-fit: contain;
   flex-shrink: 0;
 }
@@ -86,8 +94,8 @@
     text-align: center;
   }
 
-  .about-logo {
-    max-width: 320px;
+.about-logo {
+    max-width: 100%;
   }
 
   .about-text {
@@ -108,17 +116,12 @@
     flex-direction: column;
   }
 
-  .about-logo {
-    max-width: 260px;
+.about-logo {
+    max-width: 100%;
   }
 
-  .about-text,
-  .about-header,
-  .about-getStartButtonText {
-    text-align: center;
-  }
 
   .about-getStartButton {
-    margin: 0 auto;
+    margin: 0;
   }
 }
