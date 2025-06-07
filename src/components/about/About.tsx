@@ -55,7 +55,7 @@ function About() {
       <h1 className="about-title">The Future of Social Learning</h1>
 
       <div className="aboutContainer">
-        <div>
+        <div className="about-texts">
           <h1 className="about-header">Interactive Learning</h1>
           <p className="about-text">
             Transform education through social media-style interactions. Connect with peers and tutors, collaborate on lessons, and make learning enjoyable with community-driven discussions.
@@ -70,7 +70,7 @@ function About() {
 
       <div className="aboutContainer image-last">
         <img src={about2} className="about-logo" />
-        <div>
+        <div className="about-texts">
           <h1 className="about-header">Gamified Experience</h1>
           <p className="about-text">
         Stay motivated with challenges, leaderboards, and streaks that transform skill mastery into an engaging game-like experience.
@@ -82,7 +82,7 @@ function About() {
       </div>
 
       <div className="aboutContainer">
-        <div>
+        <div className="about-texts">
           <h1 className="about-header">Earn While You Learn</h1>
           <p className="about-text">
 Complete lessons, participate in challenges, and earn rewards through our token system for your progress and achievements.</p>
