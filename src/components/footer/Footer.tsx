@@ -10,7 +10,7 @@ function Footer() {
     <footer className="footer-container">
       
       <div className="footerContainer">
-        <div>
+        <div className="footerContainer-texts">
           <h1 className="footer-header">Ready to Transform Your Learning Journey?</h1>
           <p className="footer-text">
 Join other learners already earning while they master new skills. Start your adventure today and discover why LearnFi is the future of education.          </p>
