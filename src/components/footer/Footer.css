@@ -16,6 +16,10 @@
     flex-direction: column;
 }
 
+.footerContainer-texts {
+    margin-bottom: 50px;
+}
+
 .footer-header {
     font-size: 28px;
     color: #fff;
@@ -108,6 +112,7 @@
     font-size: 14px;
     font-family: "Inter", sans-serif;
 }
+
 
 /* Medium screens (tablets) */
 @media screen and (min-width: 768px) {
