@@ -18,7 +18,7 @@ Join other learners already earning while they master new skills. Start your adv
         <p className='footer-getStartButtonText'>Get Started</p>
       </div>
         </div>
-                <img src={users} className="about-logo" />
+                <img src={users} className="footer-image" />
 
       </div>
       <div className="footer-contact-container">
