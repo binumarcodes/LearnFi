@@ -59,7 +59,8 @@
 
 /* Images */
 .about-logo {
-  max-width: 612px;
+  width: 612px;
+  min-width: 52%;
   object-fit: contain;
   flex-shrink: 0;
 }
@@ -121,6 +122,7 @@
   }
 
 .about-logo {
+  max-width: 100%;
     max-width: 100%;
   }
 
